@@ -12,6 +12,10 @@ same host/domain with the same username.
 This script resolves this by ensuring the `path` field contains the full repository path,
 extracted from the remote URL, so credentials are managed individually for each repository.
 
+**git-credential-extender** effectively 'extends' the key-names for the key/value pairs for
+your actual credential manager, so that it allows you to store a password for each repository 
+for the same user.
+
 ## How it works under the hood
 Suppose you are cloning `https://github.com/example-user/example-repo.git`.
 
@@ -38,10 +42,10 @@ to store multiple username/password comibations with the same username on a spec
 ## Usage
 
 1. Save this script somewhere on your system, e.g.:
-      `/path/to/git-credential-key-extender.sh`
+      `/path/to/git-credential-extender.sh`
 2. Make sure it is executable:
-      `chmod +x /path/to/git-credential-key-extender.sh`
+      `chmod +x /path/to/git-credential-extender.sh`
 3. Configure Git:
-      `git config --global credential.helper /path/to/git-credential-key-extender.sh`
+      `git config --global credential.helper /path/to/git-credential-extender.sh`
 4. Perform Git operations (e.g., clone, push, pull) and verify that credentials are
    stored/retrieved on a per-repository basis by using the full repository URL.

@@ -3,11 +3,11 @@
 #
 # Usage:
 #   1. Save this script somewhere on your system, e.g.:
-#         /path/to/git-credential-key-extender.sh
+#         /path/to/git-credential-extender.sh
 #   2. Make sure it is executable:
-#         chmod +x /path/to/git-credential-key-extender.sh
+#         chmod +x /path/to/git-credential-extender.sh
 #   3. Configure Git:
-#         git config --global credential.helper /path/to/git-credential-key-extender.sh
+#         git config --global credential.helper /path/to/git-credential-extender.sh
 #   4. Perform Git operations (e.g., clone, push, pull) and verify that credentials are
 #      stored/retrieved on a per-repository basis by using the full repository URL.
 #
